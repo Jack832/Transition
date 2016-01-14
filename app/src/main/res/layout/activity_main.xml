@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:clipChildren="false"
+   >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    <View
+        android:id="@+id/red"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:background="#f07"
+        android:elevation="4dp"
+        />
+    <View
+        android:id="@+id/black"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#00000d"
+        android:layout_toEndOf="@id/red"
+        android:elevation="4dp"
+        />
+    <View
+        android:id="@+id/blue"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+android:layout_margin="8dp"
+        android:background="#151cd6"
+        android:layout_below="@+id/red"
+        android:elevation="4dp"
+        />
+    <View
+        android:id="@+id/green"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/black"
+        android:background="#27d90c"
+        android:layout_margin="8dp"
+        android:layout_toEndOf="@id/blue"
+        android:elevation="4dp"
+        />
+    </RelativeLayout>
+</RelativeLayout>
